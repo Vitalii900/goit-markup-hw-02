@@ -12,17 +12,6 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Убрал подчеркивания и точки со ссылок и списков */
-
-.link,
-.logo {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
 /* Навигация */
 
 .link.nav {
@@ -35,19 +24,26 @@ body {
 
 /* Логотип */
 
-.logo {
+.aссent {
+  color: var(--active-text-color);
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-head {
+  font-family: 'raleway';
   color: var(--text-logo);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--active-text-color);
-}
-
-.aссent {
+.logo-head:hover,
+.logo-head:focus {
   color: var(--active-text-color);
 }
 
@@ -90,9 +86,13 @@ body {
 .filter {
   font-family: inherit;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
-/* Герой */
+/* Герой главной страницы */
 
 .hero {
   background-color: #2f303a;
@@ -108,6 +108,22 @@ body {
   text-transform: uppercase;
 }
 
+/* Герой страницы портфолио */
+
+.image-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.image-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondery-text-color);
+}
+
 /* Преимущества */
 
 .advantage {
@@ -119,7 +135,6 @@ body {
 }
 
 .advantage-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -147,7 +162,6 @@ body {
 }
 
 .job-title {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -156,30 +170,45 @@ body {
 /* Футер */
 
 .footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .address-place {
-    color: var(--text-hero);
+  color: var(--text-hero);
 }
 
 .address > .contacts {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .logo-footer {
-    color: var(--text-hero);
+  color: var(--text-hero);
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-footer:hover,
 .logo-footer:focus {
   color: var(--active-text-color);
+}
+
+/* Убрал подчеркивания и точки со ссылок и списков */
+
+.link,
+.logo {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
 }
