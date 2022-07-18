@@ -5,11 +5,17 @@
   --active-text-color: #2196f3;
   --text-logo: #000000;
   --text-hero: #ffffff;
+  --team-background-color: #F5F4FA;
 }
 
 body {
   font-family: 'roboto', sans-serif;
   color: var(--primary-text-color);
+}
+
+/* Хедер */
+.header {
+  background-color: var(--text-hero);
 }
 
 /* Навигация */
@@ -47,7 +53,7 @@ body {
   color: var(--active-text-color);
 }
 
-/* Cсылки */
+/* Cсылки контактов хедера */
 
 .link.contacts {
   color: var(--secondery-text-color);
@@ -110,6 +116,10 @@ body {
 
 /* Герой страницы портфолио */
 
+.portfolio-hero {
+  background-color: var(--main-background-color);
+}
+
 .image-title {
   font-weight: 700;
   font-size: 18px;
@@ -127,6 +137,9 @@ body {
 /* Преимущества */
 
 .advantage {
+  background-color: var(--main-background-color);
+}
+.advantage-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -143,8 +156,8 @@ body {
 
 /* Чем мы занимаемся */
 
-.process,
-.team {
+.process-title,
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -153,6 +166,14 @@ body {
 }
 
 /* Команда */
+
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-card {
+  background-color: var(--text-hero);
+}
 
 .team-name {
   font-weight: 500;
@@ -184,7 +205,7 @@ body {
   color: var(--text-hero);
 }
 
-.address > .contacts {
+.footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 
